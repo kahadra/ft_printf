@@ -26,8 +26,7 @@ $(OBJ_DIR)%.o : %.c
 all : $(NAME)
 clean :
 	$(RM) $(OBJ_DIR)
-fclean :
-	$(RM) $(OBJ_DIR)
+fclean : clean
 	$(RM) $(NAME)
 re : fclean all
 .PHONY : all clean fclean re
